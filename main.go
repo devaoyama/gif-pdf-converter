@@ -79,5 +79,5 @@ func main() {
 
 	http.HandleFunc("/", viewHandler)
 	http.HandleFunc("/convert", convertHandler)
-	log.Fatalln(http.ListenAndServe(":" + os.Getenv("PORT"), nil))
+	log.Fatalln(http.ListenAndServe(":8080", nil))
 }
